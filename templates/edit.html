@@ -1,0 +1,31 @@
+<!-- templates/edit.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Expense</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Edit Expense</h1>
+  <form method="POST" action="{{ url_for('update_expense', expense_id=expense.id) }}">
+    <input type="text" name="description" placeholder="Description" value="{{ expense.description }}" required>
+    <input type="number" name="amount" placeholder="Amount" step="0.01" value="{{ expense.amount }}" required>
+    <input type="text" name="category" placeholder="Category" value="{{ expense.category }}" required>
+    <button type="submit">Update Expense</button>
+  </form>
+  <a href="{{ url_for('home') }}">Cancel</a>
+</body>
+</html>
+
