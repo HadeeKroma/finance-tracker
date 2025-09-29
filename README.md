@@ -60,5 +60,5 @@ MIT License — Free to use, modify, and share.
 
 ## ✨ Credits
 
-Developed by Hadee Kroma with help from ChatGPT.
+Developed by Hadee Kroma with guided assistance from AI.
 
